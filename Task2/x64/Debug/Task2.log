@@ -1,2 +1,5 @@
 ﻿  Source.cpp
-  Task2.vcxproj -> C:\University\Data_structures_and_algorithms\HW_03_Dijkstras_algorithm\x64\Debug\Task2.exe
+C:\University\Data_structures_and_algorithms\HW_03_Dijkstras_algorithm\Task2\Source.cpp(78,37): error C2760: syntax error: '+' was unexpected here; expected ','
+C:\University\Data_structures_and_algorithms\HW_03_Dijkstras_algorithm\Task2\Source.cpp(78,40): error C2059: syntax error: ']'
+C:\University\Data_structures_and_algorithms\HW_03_Dijkstras_algorithm\Task2\Source.cpp(78,60): error C2059: syntax error: ')'
+C:\University\Data_structures_and_algorithms\HW_03_Dijkstras_algorithm\Task2\Source.cpp(80,4): error C2181: illegal else without matching if

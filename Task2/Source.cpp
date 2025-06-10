@@ -29,12 +29,17 @@ int main() {
 
 	bool obstacle_lenght_done = false;
 
+	// Entity map[row][column];
+	// Entity {x, y, char)
+
+	// Entity player ()
+
 	while (!complete) {
-		std::this_thread::sleep_for(std::chrono::milliseconds(300));
+		std::this_thread::sleep_for(std::chrono::milliseconds(100));
 		system("cls");
-		for (int i = 1; i <= row; i++)
+		for (int i = 0; i < row; i++)
 		{
-			for (int j = 1; j <= column; j++)
+			for (int j = 0; j < column; j++)
 			{
 				map[i][j] = '-';
 
@@ -47,17 +52,19 @@ int main() {
 					map[i][j] = 'B';
 			}
 		}
+
+		// draw
 		
-		for (int i = 1; i <= row; i++)
+		for (int i = 0; i < row; i++)
 		{
-			for (int j = 1; j <= column; j++)
+			for (int j = 0; j < column; j++)
 			{
 				std::cout << map[i][j];
 			}
 			std::cout << std::endl;
 		}
 
-		if (obstacle_length > p_A_y && !obstacle_lenght_done)
+		if (obstacle_length > p_A_y && !obstacle_lenght_done) 
 			p_A_y++;
 		else if (obstacle_column < p_A_x && p_A_x != p_B_x) {
 			p_A_x++;
